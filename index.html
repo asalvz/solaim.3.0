@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="same-origin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta property="og:title" content="SOLAIN">
+    <meta property="og:description">
+    <meta property="og:image" content="https://www.solain.im/image/ogpimage">
+    <title>SOLAIN</title>
+    <style type="text/css">
+        #app { min-height: 100vh; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; background: #f8f9fb }
+        @-webkit-keyframes load {
+            0%, 100%, 80% { opacity: .75; box-shadow: 0 0 #ffd44a; height: 2rem }
+            40% { opacity: 1; box-shadow: 0 -.5rem #ffd44a; height: 2.5rem }
+        }
+
+        @keyframes load {
+            0%, 100%, 80% { opacity: .75; box-shadow: 0 0 #ffd44a; height: 2rem }
+            40% { opacity: 1; box-shadow: 0 -.5rem #ffd44a; height: 2.5rem }
+        }
+
+        .app-loader { margin: auto; display: block }
+        .loader-bars, .loader-bars:after, .loader-bars:before { background: #F0B90B; -webkit-animation: load .8s infinite ease-in-out; animation: load .8s infinite ease-in-out; width: .85rem; height: 2rem }
+        .loader-bars:after, .loader-bars:before { position: absolute; top: 0; content: "" }
+        .loader-bars { text-indent: -9999em; margin: auto; position: absolute; right: calc(50% - .425rem); font-size: 11px; -webkit-animation-delay: .16s; animation-delay: .16s }
+        .loader-bars:before { left: -1.25rem }
+        .loader-bars:after { left: 1.25rem; -webkit-animation-delay: .32s; animation-delay: .32s }
+
+        button.btn-loading::after { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48c3R5bGU+QGtleWZyYW1lcyBsb2FkezAle3RyYW5zZm9ybTpyb3RhdGUoMCl9dG97dHJhbnNmb3JtOnJvdGF0ZSgtMzYwZGVnKX19PC9zdHlsZT48ZyBzdHlsZT0iYW5pbWF0aW9uOmxvYWQgMXMgbGluZWFyIGluZmluaXRlO3RyYW5zZm9ybS1vcmlnaW46Y2VudGVyIGNlbnRlciI+PGxpbmVhckdyYWRpZW50IGlkPSJyaWdodCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxNTAiIHkxPSIyMCIgeDI9IjE1MCIgeTI9IjE4MCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii41Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSJNMTAwIDB2MjBjNDQuMSAwIDgwIDM1LjkgODAgODBzLTM1LjkgODAtODAgODB2MjBjNTUuMiAwIDEwMC00NC44IDEwMC0xMDBTMTU1LjIgMCAxMDAgMHoiIGZpbGw9InVybCgjcmlnaHQpIi8+PGxpbmVhckdyYWRpZW50IGlkPSJsZWZ0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwIiB5MT0iMCIgeDI9IjUwIiB5Mj0iMTgwIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuNSIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZD0iTTIwIDEwMGMwLTQ0LjEgMzUuOS04MCA4MC04MFYwQzQ0LjggMCAwIDQ0LjggMCAxMDBzNDQuOCAxMDAgMTAwIDEwMHYtMjBjLTQ0LjEgMC04MC0zNS45LTgwLTgweiIgZmlsbD0idXJsKCNsZWZ0KSIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwIiByPSIxMCIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=) }
+    </style>
+        <script type="text/javascript">
+            let arr = window.location.hostname.split('.');
+            let rtqs_path = window.location.origin;
+            if (arr.length >= 2) {
+                rtqs_path = '//rtqs.' + arr.slice(arr.length - 2).join('.');
+            }
+            const g_rtqs_path = rtqs_path;
+        </script>
+</head>
+<body>
+    <div id="app">
+        <div class="app-loader"><div class="loader-bars"></div></div>
+    </div>
+    <script type="text/javascript" src="https://www.solain.im/dist/vendors.77238965745a6b4c48a8.js" defer></script>
+    <script type="text/javascript" src="https://www.solain.im/dist/app_v3.c0da21f47b4eaafc98dc.js" defer></script>
+    <link rel="stylesheet" href="https://www.solain.im/public/bootstrap-5.1.3/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://www.solain.im/Public/bootstrap-5.1.3/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://www.solain.im/dist/app_v3.3551d6fe0e9398e257c2.css" />
+
+    
+
+    <script type="text/javascript">
+        (function () {
+            var scaleFactor = 14 / parseInt(window.getComputedStyle(document.body, null).getPropertyValue('font-size'));
+            console.log('## scale factor = ' + scaleFactor);
+            if (!isNaN(scaleFactor)) {
+                document.documentElement.style.fontSize = (14 * scaleFactor) + 'px';
+                document.body.style.fontSize = (14 * scaleFactor) + 'px';
+            }
+        })();
+    </script>
+</body>
+</html>
